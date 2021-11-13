@@ -11,6 +11,11 @@ Gather files from this repository
 ```shell
 $ git clone <this repo>
 ```
+Generate **Gemfile.lock** and **gemset.nix** using `bundler` and `bundix`
+
+```shell
+$ nix-shell -p bundler bundix --run 'bundle lock && bundix'
+```
 
 ### Development environment only
 
@@ -19,12 +24,6 @@ $ nix-shell
 $ hieracles -h
 
 Usage: hieracles <command> [extra_args] 
-```
-
-Generate **Gemfile.lock** and **gemset.nix** using `bundler` and `bundix`
-
-```shell
-$ nix-shell -p bundler bundix --run 'bundle lock && bundix'
 ```
 
 ### Build

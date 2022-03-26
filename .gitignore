@@ -1,2 +1,3 @@
-Gemfile.lock
-gemset.nix
+hieracles*/result
+hieracles-0.4.2-bundix/Gemfile.lock
+hieracles-0.4.2-bundix/gemset.nix

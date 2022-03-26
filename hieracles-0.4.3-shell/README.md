@@ -10,6 +10,11 @@ It's possible to use hieracles 0.4.3 directly by using a Nix Shell.
 $ git clone https://github.com/Gandi/hieracles.git
 $ cd hieracles
 
+# Need to patch Gemfile to avoir a DEPRECATED warning
+$ cat Gemfile
+source 'https://rubygems.org'
+gem 'hieracles'
+
 # Bundler version will be updated
 $ nix-shell -p bundler bundix --run 'bundle lock && bundix'
 $ cat << EOF > shell.nix

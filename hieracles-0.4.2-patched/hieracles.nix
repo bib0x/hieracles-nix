@@ -14,6 +14,10 @@ bundlerApp {
           url = "https://github.com/Gandi/hieracles/commit/e97e02bb6c94436228af2b2a08718b1a41c22122.patch";
           sha256 = "1mfl94981h4hjj8kjlnwcsmrhvmpb9qdmbqmcd45qvci9ipa3kaz";
         })
+        (fetchpatch {
+          url = "https://github.com/bib0x/hieracles/commit/09e2e5ba6ccaa7a382e868cf2df246b1bc5113a1.patch";
+          sha256 = "sha256-P4DEi4TlYn1Tj4wF9uGcM89m/WF2kF6KrEl6r69KBS4=";
+        })
       ];
     };
   });
